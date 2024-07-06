@@ -1,0 +1,257 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar{
+    display: flex;
+    background-color: rgb(51, 50, 50);
+    position:sticky;
+    top: 0%;
+    align-items: center;
+    transition: all 0.3s ease-out;
+    
+}
+    .navlist{
+        width: 70%;
+        /* background-color: brown; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+.navlist>li>a{
+    text-decoration: none;
+    color:white;
+   
+}
+.navlist>li{
+    list-style: none;
+    padding: 25px;
+    font-size: 20px;
+     
+
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    border: 2px solid rgb(212, 206, 206);
+    justify-content: center;
+    align-items: center;
+    
+}
+.searchbox{
+    width: 30%;
+
+
+}
+.navlist>li>a:hover{
+    color:lightskyblue;
+    font-weight: 800;
+}
+.btn{
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+.btn:hover{
+    background-color: lightslategray;
+    color: whitesmoke;
+    cursor: pointer;
+}
+input{
+    width:200px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+.background{
+     background:rgb(0, 0, 0,0.7) url("https://images.unsplash.com/photo-1530143584546-02191bc84eb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80");
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+   
+}
+h1{
+    font-weight: 900;
+    font-family:  "Audiowide", sans-serif;;
+    color: white;
+    font-size: 2cm;
+    text-align: center;
+    letter-spacing: 14px;
+    word-spacing: 15px;
+
+}
+h2{
+    font-size: 0.5cm;
+    font-weight: 500;
+    color: darkgray;
+    font-family:  "Audiowide", sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+.anotherimg{
+    width:400px;
+    height: 600px;
+}
+input[type]{
+    font-weight: 700;
+    font-size: 19px;
+}
+.button{
+    text-align: center;
+    
+    margin: 25px 25px;
+    
+
+}
+
+
+button:hover{
+    color: darkgray;
+    background-color: black;
+    cursor: pointer;
+}
+#firsthalf{
+    padding: 75px;
+}
+#btnone,#btntwo{
+    padding: 25px;
+    font-size: 20px;
+    margin: 30px;
+    font-weight: 600;
+    font-family:"Audiowide", sans-serif ;
+    background: none;
+    color: white;
+    border: 3px solid white;
+}
+#btnone:hover,#btntwo:hover{
+    color: white;
+    background-color: darkgrey;
+}
+
+
+    
+
+.founder{
+    font-weight: 900;
+    font-family: cursive;
+    padding: 25px;
+    font-size: 0.75cm;
+    align-self: flex-start;
+    color:darkgrey;
+
+}
+.user{
+    width: 250px;
+    height: 250px;
+    
+}
+ .flex{
+     float: left;
+ }
+ 
+
+ 
+ .secondhalf{
+     /* background-color: rgb(92, 90, 90); */
+     height: 720px;
+    }
+ .aboutfndr{
+     align-self: center;
+     font-family: "Audiowide", sans-serif;
+     font-weight: 700;
+     font-size: 25px;
+     padding: 150px;
+     color: darkgrey;
+     
+ }
+ .name,.thirdsection{
+    font-size: 25px;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 700;
+ }
+ .flexx{
+     float: left;
+     
+ }
+ .aboutus{
+     
+     font-size: 25px;
+     font-family:"Audiowide", sans-serif ;
+     color: darkgrey
+ }
+ .secondbg{
+     background: rgb(0, 0, 0,0.7) url("https://th.bing.com/th/id/R.1b525982368ec4a583a226eae0104e19?rik=6kZE5PrU%2ffrRQw&riu=http%3a%2f%2fyellowjerseycycle.com%2fwp-content%2fuploads%2f2013%2f05%2fCerveloR5.jpg&ehk=CbGj6aEFCehCUv5NIhunZcI6MaJ%2f%2bDA9aN6%2b47O41DA%3d&risl=&pid=ImgRaw");
+     background-blend-mode: darken;
+     background-size: cover;
+     background-repeat: no-repeat;
+    
+ }
+ #services,.name{
+     color:darkgrey;
+ }
+ .secondbg{
+     letter-spacing: 3px;
+     padding:20px;
+ }
+ #contacts{
+     color:darkgrey;
+     font-family:"Audiowide", sans-serif ;
+ }
+     a{
+         color: white;
+         text-decoration: none;
+     }
+     .line{
+         background-color: white;
+         margin: 5px;
+         height: 4px;
+         width: 30px;
+         border-radius: 5px;
+     }
+     .burger{
+         position: absolute;
+         right: 3%;
+         top: 5%;
+         display: none;
+     }
+     @media only screen  and (max-width:1167px){
+    .navlist{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 477px;
+    }
+    .searchbox{
+        width: 30%;
+        
+    }
+    .search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 70px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .firstsection{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    
+}
+
+
+ 
+    
